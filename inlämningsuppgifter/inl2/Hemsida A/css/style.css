@@ -5,7 +5,7 @@ ol, ul { list-style: none; }
 /** ----------------------
  	fonts loading
 ---------------------- **/
-.wf-loading { visibility: hidden; /* hide web fonts until they have finished loading */ }
+.wf-loading { visibility: hidden; } /* hide web fonts until they have finished loading */
 
 /** ----------------------
  	general
@@ -89,10 +89,9 @@ strong { font-weight: bold; }
 	font-weight: 300;
 	margin-right: 12px;
 }
-#nav ul li a img { margin-right: 3%; }
 
 /** -----------------------------
- 	MBH heading (in header & footer)
+  heading (in header & footer)
 ------------------------------ **/
 #head { display: block; width: 100%; height: 45px; margin: 3em auto;  }
 
@@ -100,11 +99,10 @@ strong { font-weight: bold; }
  	film
 ---------------------- **/
 .film-container { margin: 1.5em auto; }
-.player { position: relative; width: 100%; height: 100%; padding-bottom: 60%}
+.player { position: relative; width: 100%; height: 100%; padding-bottom: 58%}
 .player iframe { position: absolute; left: 0px; }
 .description { width: 95%; /* 728px/768px */ margin: 0 auto; }
 .description p { font-style: italic; }
-.description p a { font-style: normal; font-weight: bold; font-size: .8em; /* 16p/18px */ }
 
 iframe { max-width: 100%; max-height: 100%; }
 
@@ -112,13 +110,13 @@ iframe { max-width: 100%; max-height: 100%; }
   gallary list
 ---------------------- **/
 .gallary-list {
-	width: 83.333333%; /* 1000px/1200px */
+	width: 85%; /* 1020px/1200px */
 	clear: both;
 	margin: 2.25em auto;
 	border-top: 2px solid #666;
 }
 .gallary-list h2.gallary {
-	margin-top: -.9375em; /* 15px/16px */
+	margin-top: -15px;
 	text-align: center;
 }
 .gallary-list h2.gallary img { width: 160px; margin: 0 auto; }
@@ -134,7 +132,6 @@ iframe { max-width: 100%; max-height: 100%; }
 	padding-bottom: 24px;
 	border-bottom: 1px solid #ccc;
 }
-.gallary-list ol li:last-child {border-bottom: none;}
 .gallary-list-item h2.title, .gallary-list-item img, .gallary-list-item .description { width: 48.5%; /* 485px/1000px */ }
 .gallary-list-item h2.title {
 	margin: .75em 0;

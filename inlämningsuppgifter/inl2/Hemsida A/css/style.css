@@ -34,21 +34,6 @@ h2.title {
 	font-weight: normal;
 	color: #333;
 }
-h3 {
-	padding-top: .75em; /* 12px/16px */
-	font: bold 1em "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif;
-	text-transform: uppercase;
-}
-dl {
-	margin: 1.5em 0; /* 24px/16px */
-	padding-top: 2.25em; /* 36px/16px */
-	border-top: 2px solid #ccc;
-}
-dt {
-	font: .75em/1.5 "museo-sans-rounded-1", "museo-sans-rounded-2", sans-serif; /* 12px/16px */
-	text-transform: uppercase;
-}
-dd { margin-bottom: 1.5em; /* 24px/16px */ font-style: italic; }
 p { margin: .75em 0; }
 a {
 	color: #333;
@@ -58,7 +43,7 @@ a {
 	font-weight: bold;
 }
 a:hover {color: #2CBAE2;}
-dd a {
+a {
 	font-style: italic;
 	font-weight: bold;
 	font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "Times New Roman", Georgia, serif;
@@ -78,6 +63,9 @@ strong { font-weight: bold; }
 .player iframe { position: absolute; left: 0; max-width: 100%; max-height: 97.2%; }
 .description { margin: 0 auto; width: 95%; /* 728px/768px */  }
 .description p { font-style: italic; }
+.description span {
+	color: blue;
+}
 
 /** ----------------------
   gallary list
@@ -94,10 +82,8 @@ strong { font-weight: bold; }
 }
 .gallary-list h2.gallary img { width: 160px; margin: 0 auto; }
 
-/* Hover color for each film list item */
+/* Hover color for each list item */
 .gallary-list a:hover h2.title, .gallary-list a:hover h2 span {color: #28A8CC;}
-
-
 .gallary-list ol li {
 	width: 100%;
 	height: 15em; /* 270px/16px */
@@ -136,7 +122,41 @@ a .gallary-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "
 }
 #footer .group { max-width: 1200px; }
 
-/*---- description ----*/
+/*---- contact form ----*/
+ form{
+	 text-align: center;
+	 margin: 0 auto 20px;
+	 max-width: 50%;
+ }
+ .submit{
+	 background-color: #3fb6b2;
+	 padding: 12px 45px;
+	 border-radius: 5px;
+	 cursor: pointer;
+	 color: #fff;
+	 border: none;
+	 margin: 0 auto;
+	 font-weight: bold;
+ }
+ .submit:hover{
+	 background-color: #43a09d;
+ }
+ textarea{
+	 height: 100px;
+ }
+ input, textarea{
+	 margin-bottom: 10px;
+	 font-size: 11pt;
+	 padding: 15px 10px 10px;
+	 border: 1px solid #cecece;
+	 background-color: #efefef;
+	 color: #787575;
+	 border-radius: 5px;
+	 width: 70%;
+	 outline: none;
+ }
+
+/*---- about ----*/
 #footer .about-section {
 	text-align: center;
 	width: 85%; /* 1020px/1200px */
@@ -234,7 +254,7 @@ a .gallary-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "
 	/* ----- about ----- */
 	.about #head { height: 4.6875em; }
 	.about .project { width: 100%; }
-	.project div, .project dl { width: inherit; float: none; }
+	.project div, .project { width: inherit; float: none; }
 	.project div { border-bottom: 1px solid #ccc; margin-bottom: 24px; }
 
 	/* ----- footer ------ */
@@ -256,7 +276,6 @@ a .gallary-list-item {font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", "
 	.copyright span:last-child { width: 100%; float: none; margin: 0 auto; }
 
 	h2.title span { margin-top: 0; }
-	dd { margin-bottom: 1em; }
 
 	.description { width: 100%; float: none; }
 

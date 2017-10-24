@@ -1,4 +1,10 @@
 .content{
-  margin: 0 auto;
-  max-width: 50%;
+  margin: 200px auto;
+  max-width: 33%;
+}
+table{
+  border-collapse: collapse;
+}
+table, tr, td{
+  border: 1px solid;
 }
